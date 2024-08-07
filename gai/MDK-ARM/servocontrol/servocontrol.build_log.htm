@@ -1,0 +1,383 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 LX, 1, LIC=ATTQ1-CXL40-UHR8H-WJS7S-RF78Q-3KI0V
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
+Toolchain Path:  D:\MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\LX\Desktop\FINAL_CODE\FINAL_CODE\gai\MDK-ARM\servocontrol.uvprojx
+Project File Date:  07/03/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
+Rebuild target 'servocontrol'
+assembling startup_stm32f103xe.s...
+compiling LobotServoController.c...
+compiling key.c...
+compiling servo.c...
+..\Core\Src\servo.c(4): warning:  #1-D: last line of file ends without a newline
+  //compare=TIMn->CCRX/arr*100%
+..\Core\Src\servo.c: 1 warning, 0 errors
+compiling encoder.c...
+../Core/Inc/tjc_usart_hmi.h(17): warning:  #1295-D: Deprecated declaration show - give arg types
+  uint16_t show();//show sent order
+..\Core\Src\encoder.c: 1 warning, 0 errors
+compiling bujin.c...
+../Core/Inc/tjc_usart_hmi.h(17): warning:  #1295-D: Deprecated declaration show - give arg types
+  uint16_t show();//show sent order
+../Core/Inc/fengzhuang.h(4): warning:  #1295-D: Deprecated declaration yunmiao - give arg types
+  void yunmiao();
+../Core/Inc/fengzhuang.h(5): warning:  #1295-D: Deprecated declaration huishou - give arg types
+  void huishou();
+../Core/Inc/fengzhuang.h(6): warning:  #1295-D: Deprecated declaration bianmayundong - give arg types
+  void bianmayundong();
+../Core/Inc/fengzhuang.h(7): warning:  #1295-D: Deprecated declaration motor_rotate_forward - give arg types
+  void motor_rotate_forward();
+../Core/Inc/fengzhuang.h(8): warning:  #1295-D: Deprecated declaration all - give arg types
+  void all();
+../Core/Inc/fengzhuang.h(9): warning:  #1295-D: Deprecated declaration motor_init - give arg types
+  void motor_init();
+../Core/Inc/fengzhuang.h(10): warning:  #1295-D: Deprecated declaration clamp_and_move_claw_forward - give arg types
+  void clamp_and_move_claw_forward();
+../Core/Inc/fengzhuang.h(11): warning:  #1295-D: Deprecated declaration release_and_move_claw_back - give arg types
+  void release_and_move_claw_back();
+../Core/Inc/fengzhuang.h(12): warning:  #1295-D: Deprecated declaration bianmayundong_right - give arg types
+  void bianmayundong_right();
+../Core/Inc/fengzhuang.h(13): warning:  #1295-D: Deprecated declaration motorstop - give arg types
+  void motorstop();
+..\Core\Src\bujin.c(14): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, fangxiang);
+..\Core\Src\bujin.c(18): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, fangxiang);																											
+..\Core\Src\bujin.c(22): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, fangxiang);
+..\Core\Src\bujin.c(26): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, fangxiang);
+..\Core\Src\bujin.c: 15 warnings, 0 errors
+compiling fengzhuang.c...
+../Core/Inc/fengzhuang.h(4): warning:  #1295-D: Deprecated declaration yunmiao - give arg types
+  void yunmiao();
+../Core/Inc/fengzhuang.h(5): warning:  #1295-D: Deprecated declaration huishou - give arg types
+  void huishou();
+../Core/Inc/fengzhuang.h(6): warning:  #1295-D: Deprecated declaration bianmayundong - give arg types
+  void bianmayundong();
+../Core/Inc/fengzhuang.h(7): warning:  #1295-D: Deprecated declaration motor_rotate_forward - give arg types
+  void motor_rotate_forward();
+../Core/Inc/fengzhuang.h(8): warning:  #1295-D: Deprecated declaration all - give arg types
+  void all();
+../Core/Inc/fengzhuang.h(9): warning:  #1295-D: Deprecated declaration motor_init - give arg types
+  void motor_init();
+../Core/Inc/fengzhuang.h(10): warning:  #1295-D: Deprecated declaration clamp_and_move_claw_forward - give arg types
+  void clamp_and_move_claw_forward();
+../Core/Inc/fengzhuang.h(11): warning:  #1295-D: Deprecated declaration release_and_move_claw_back - give arg types
+  void release_and_move_claw_back();
+../Core/Inc/fengzhuang.h(12): warning:  #1295-D: Deprecated declaration bianmayundong_right - give arg types
+  void bianmayundong_right();
+../Core/Inc/fengzhuang.h(13): warning:  #1295-D: Deprecated declaration motorstop - give arg types
+  void motorstop();
+../Core/Inc/tjc_usart_hmi.h(17): warning:  #1295-D: Deprecated declaration show - give arg types
+  uint16_t show();//show sent order
+..\Core\Src\fengzhuang.c(23): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Src\fengzhuang.c(24): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Src\fengzhuang.c(25): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Src\fengzhuang.c(26): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Src\fengzhuang.c(27): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Src\fengzhuang.c(28): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Src\fengzhuang.c(29): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Src\fengzhuang.c(30): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Src\fengzhuang.c(51): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,1);
+..\Core\Src\fengzhuang.c(52): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Src\fengzhuang.c(53): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,0);	
+..\Core\Src\fengzhuang.c(54): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,1);
+..\Core\Src\fengzhuang.c(66): warning:  #188-D: enumerated type mixed with another type
+  									HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,0);
+..\Core\Src\fengzhuang.c(67): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Src\fengzhuang.c(68): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,0);
+..\Core\Src\fengzhuang.c(69): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,0);
+..\Core\Src\fengzhuang.c(74): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,SET);
+..\Core\Src\fengzhuang.c(75): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Src\fengzhuang.c(76): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+..\Core\Src\fengzhuang.c(77): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Src\fengzhuang.c(78): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,SET);
+..\Core\Src\fengzhuang.c(79): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Src\fengzhuang.c(80): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,SET);
+..\Core\Src\fengzhuang.c(81): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Src\fengzhuang.c(83): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Src\fengzhuang.c(84): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Src\fengzhuang.c(85): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Src\fengzhuang.c(86): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Src\fengzhuang.c(87): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Src\fengzhuang.c(88): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Src\fengzhuang.c(89): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Src\fengzhuang.c(90): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Src\fengzhuang.c(125): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Src\fengzhuang.c(126): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Src\fengzhuang.c(127): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Src\fengzhuang.c(128): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Src\fengzhuang.c(129): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Src\fengzhuang.c(130): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Src\fengzhuang.c(131): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Src\fengzhuang.c(132): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Src\fengzhuang.c(136): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,1);
+..\Core\Src\fengzhuang.c(137): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Src\fengzhuang.c(143): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,0);
+..\Core\Src\fengzhuang.c(144): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Src\fengzhuang.c(177): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\fengzhuang.c: 56 warnings, 0 errors
+compiling tjc_usart_hmi.c...
+..\Core\Inc\tjc_usart_hmi.h(17): warning:  #1295-D: Deprecated declaration show - give arg types
+  uint16_t show();//show sent order
+../Core/Inc/fengzhuang.h(4): warning:  #1295-D: Deprecated declaration yunmiao - give arg types
+  void yunmiao();
+../Core/Inc/fengzhuang.h(5): warning:  #1295-D: Deprecated declaration huishou - give arg types
+  void huishou();
+../Core/Inc/fengzhuang.h(6): warning:  #1295-D: Deprecated declaration bianmayundong - give arg types
+  void bianmayundong();
+../Core/Inc/fengzhuang.h(7): warning:  #1295-D: Deprecated declaration motor_rotate_forward - give arg types
+  void motor_rotate_forward();
+../Core/Inc/fengzhuang.h(8): warning:  #1295-D: Deprecated declaration all - give arg types
+  void all();
+../Core/Inc/fengzhuang.h(9): warning:  #1295-D: Deprecated declaration motor_init - give arg types
+  void motor_init();
+../Core/Inc/fengzhuang.h(10): warning:  #1295-D: Deprecated declaration clamp_and_move_claw_forward - give arg types
+  void clamp_and_move_claw_forward();
+../Core/Inc/fengzhuang.h(11): warning:  #1295-D: Deprecated declaration release_and_move_claw_back - give arg types
+  void release_and_move_claw_back();
+../Core/Inc/fengzhuang.h(12): warning:  #1295-D: Deprecated declaration bianmayundong_right - give arg types
+  void bianmayundong_right();
+../Core/Inc/fengzhuang.h(13): warning:  #1295-D: Deprecated declaration motorstop - give arg types
+  void motorstop();
+..\Core\Inc\tjc_usart_hmi.c(121): warning:  #940-D: missing return statement at end of non-void function "show" 
+  }	
+..\Core\Inc\tjc_usart_hmi.c(283): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,SET);
+..\Core\Inc\tjc_usart_hmi.c(284): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Inc\tjc_usart_hmi.c(285): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,SET);
+..\Core\Inc\tjc_usart_hmi.c(286): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Inc\tjc_usart_hmi.c(287): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,SET);
+..\Core\Inc\tjc_usart_hmi.c(288): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Inc\tjc_usart_hmi.c(289): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,SET);
+..\Core\Inc\tjc_usart_hmi.c(290): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Inc\tjc_usart_hmi.c(292): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Inc\tjc_usart_hmi.c(293): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Inc\tjc_usart_hmi.c(294): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Inc\tjc_usart_hmi.c(295): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Inc\tjc_usart_hmi.c(296): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Inc\tjc_usart_hmi.c(297): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Inc\tjc_usart_hmi.c(298): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Inc\tjc_usart_hmi.c(299): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Inc\tjc_usart_hmi.c(307): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Inc\tjc_usart_hmi.c(308): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,SET);
+..\Core\Inc\tjc_usart_hmi.c(309): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Inc\tjc_usart_hmi.c(310): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,SET);
+..\Core\Inc\tjc_usart_hmi.c(311): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Inc\tjc_usart_hmi.c(312): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,SET);
+..\Core\Inc\tjc_usart_hmi.c(313): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Inc\tjc_usart_hmi.c(314): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,SET);
+..\Core\Inc\tjc_usart_hmi.c(318): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,RESET);
+..\Core\Inc\tjc_usart_hmi.c(319): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,RESET);
+..\Core\Inc\tjc_usart_hmi.c(320): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_6,RESET);
+..\Core\Inc\tjc_usart_hmi.c(321): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,RESET);
+..\Core\Inc\tjc_usart_hmi.c(322): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,RESET);
+..\Core\Inc\tjc_usart_hmi.c(323): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,RESET);
+..\Core\Inc\tjc_usart_hmi.c(324): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,RESET);
+..\Core\Inc\tjc_usart_hmi.c(325): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,RESET);
+..\Core\Inc\tjc_usart_hmi.c(389): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,1);
+..\Core\Inc\tjc_usart_hmi.c(390): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(393): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(394): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(401): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(402): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,1);
+..\Core\Inc\tjc_usart_hmi.c(405): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN3_GPIO_Port,bianma_IN3_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(406): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN4_GPIO_Port,bianma_IN4_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(413): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,1);
+..\Core\Inc\tjc_usart_hmi.c(414): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(417): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(418): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(423): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(424): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,1);
+..\Core\Inc\tjc_usart_hmi.c(427): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianmaIN1_GPIO_Port,bianmaIN1_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c(428): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(bianma_IN2_GPIO_Port,bianma_IN2_Pin,0);
+..\Core\Inc\tjc_usart_hmi.c: 60 warnings, 0 errors
+compiling usart.c...
+compiling stm32f1xx_it.c...
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling main.c...
+../Core/Inc/tjc_usart_hmi.h(17): warning:  #1295-D: Deprecated declaration show - give arg types
+  uint16_t show();//show sent order
+../Core/Inc/fengzhuang.h(4): warning:  #1295-D: Deprecated declaration yunmiao - give arg types
+  void yunmiao();
+../Core/Inc/fengzhuang.h(5): warning:  #1295-D: Deprecated declaration huishou - give arg types
+  void huishou();
+../Core/Inc/fengzhuang.h(6): warning:  #1295-D: Deprecated declaration bianmayundong - give arg types
+  void bianmayundong();
+../Core/Inc/fengzhuang.h(7): warning:  #1295-D: Deprecated declaration motor_rotate_forward - give arg types
+  void motor_rotate_forward();
+../Core/Inc/fengzhuang.h(8): warning:  #1295-D: Deprecated declaration all - give arg types
+  void all();
+../Core/Inc/fengzhuang.h(9): warning:  #1295-D: Deprecated declaration motor_init - give arg types
+  void motor_init();
+../Core/Inc/fengzhuang.h(10): warning:  #1295-D: Deprecated declaration clamp_and_move_claw_forward - give arg types
+  void clamp_and_move_claw_forward();
+../Core/Inc/fengzhuang.h(11): warning:  #1295-D: Deprecated declaration release_and_move_claw_back - give arg types
+  void release_and_move_claw_back();
+../Core/Inc/fengzhuang.h(12): warning:  #1295-D: Deprecated declaration bianmayundong_right - give arg types
+  void bianmayundong_right();
+../Core/Inc/fengzhuang.h(13): warning:  #1295-D: Deprecated declaration motorstop - give arg types
+  void motorstop();
+../Core/Src/main.c: 11 warnings, 0 errors
+compiling tim.c...
+compiling gpio.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_uart.c...
+linking...
+Program Size: Code=20950 RO-data=934 RW-data=60 ZI-data=2644  
+FromELF: creating hex file...
+"servocontrol\servocontrol.axf" - 0 Error(s), 144 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_servocontrol
+  D:/MDKpro/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/MDKpro/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>

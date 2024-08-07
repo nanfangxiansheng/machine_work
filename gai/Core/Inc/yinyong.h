@@ -1,0 +1,20 @@
+#ifndef YINYONG_H
+#define YINYONG_H
+#include "LobotServoController.h"
+#include "servo.h"
+#include "tjc_usart_hmi.h"
+#include "string.h"
+#include "stdlib.h"
+#include "stdio.h"
+#include "bujin.h"
+#include <stm32f1xx_hal.h>
+#include "key.h"
+#include "encoder.h"
+#include "pid.h"
+#include "tim.h"
+#include "usart.h"
+#include "gpio.h"
+#include "main.h"
+#include "fengzhuang.h"
+#include "stm32_pca9685.h"
+#endif
